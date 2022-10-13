@@ -1,16 +1,15 @@
 const Main = imports.ui.main;
 const WindowAttentionHandler = imports.ui.windowAttentionHandler;
 const Shell = imports.gi.Shell;
-const Lang = imports.lang;
 
-function StealMyFocus() {
+function GrandTheftFocus() {
     this._init();
 }
 
-StealMyFocus.prototype = {
+GrandTheftFocus.prototype = {
     _init : function() {
         this._tracker = Shell.WindowTracker.get_default();
-        this._handlerid = global.display.connect('window-demands-attention', Lang.bind(this, this._onWindowDemandsAttention));
+        this._handlerid = global.display.connect('window-demands-attention', this._onWindowDemandsAttention.bind(this));
     },
 
     _onWindowDemandsAttention: function(display, window) {
@@ -22,15 +21,15 @@ StealMyFocus.prototype = {
     }
 }
 
-let stealmyfocus;
+let grandtheftfocus;
 
 function init() {
 }
 
 function enable() {
-    stealmyfocus = new StealMyFocus();
+    grandtheftfocus = new GrandTheftFocus();
 }
 
 function disable() {
-    stealmyfocus.destroy();
+    grandtheftfocus = null;
 }
