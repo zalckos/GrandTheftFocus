@@ -13,7 +13,8 @@ GrandTheftFocus.prototype = {
     },
 
     _onWindowDemandsAttention: function(display, window) {
-        Main.activateWindow(window);
+        if (!Main.overview._shown)
+            Main.activateWindow(window);
     },
 
     destroy: function () {
