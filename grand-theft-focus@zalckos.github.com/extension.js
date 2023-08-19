@@ -1,6 +1,8 @@
-const Main = imports.ui.main;
-const WindowAttentionHandler = imports.ui.windowAttentionHandler;
-const Shell = imports.gi.Shell;
+import * as Main from 'resource:///org/gnome/shell/ui/main.js';
+import * as WindowAttentionHandler from 'resource:///org/gnome/shell/ui/windowAttentionHandler.js';
+import Shell from 'gi://Shell';
+
+import { Extension } from 'resource:///org/gnome/shell/extensions/extension.js';
 
 function GrandTheftFocus() {
     this._init();
@@ -22,15 +24,12 @@ GrandTheftFocus.prototype = {
     }
 }
 
-let grandtheftfocus;
+export default class GrandTheftExtension {
+    enable() {
+        this._grandtheftfocus = new GrandTheftFocus();
+    }
 
-function init() {
-}
-
-function enable() {
-    grandtheftfocus = new GrandTheftFocus();
-}
-
-function disable() {
-    grandtheftfocus = null;
+    disable() {
+        this._grandtheftfocus = null;
+    }
 }
