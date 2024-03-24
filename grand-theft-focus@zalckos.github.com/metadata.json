@@ -4,7 +4,8 @@
   "license": "GPLv3",
   "name": "Grand Theft Focus",
   "shell-version": [
-    "45"
+    "45",
+    "46"
   ],
   "url": "https://github.com/zalckos/GrandTheftFocus",
   "uuid": "grand-theft-focus@zalckos.github.com",
