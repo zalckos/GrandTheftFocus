@@ -3,7 +3,9 @@ Extension for the [GNOME Desktop Environment](https://www.gnome.org/).
 
 This extension removes the annoying 'Window is ready' notification and brings the window into focus instead.
 
-[![Get it on GNOME Extensions](https://raw.githubusercontent.com/andyholmes/gnome-shell-extensions-badge/master/get-it-on-ego.svg?sanitize=true){height=100px}]([https://extensions.gnome.org/extension/6322/debian-linux-updates-indicator/](https://extensions.gnome.org/extension/5410/grand-theft-focus/))
+[<img src="https://raw.githubusercontent.com/andyholmes/gnome-shell-extensions-badge/master/get-it-on-ego.svg?sanitize=true" alt="Get it on GNOME Extensions" height="100" align="middle">][EGO]
+
+[![Get it on GNOME Extensions](https://raw.githubusercontent.com/andyholmes/gnome-shell-extensions-badge/master/get-it-on-ego.svg?sanitize=true) height="100"]([https://extensions.gnome.org/extension/6322/debian-linux-updates-indicator/](https://extensions.gnome.org/extension/5410/grand-theft-focus/))
 
 Inspired by [Steal My Focus](https://extensions.gnome.org/extension/234/steal-my-focus/).
 
